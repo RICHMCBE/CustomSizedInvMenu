@@ -35,12 +35,6 @@ final class CustomSizedInvMenu extends PluginBase{
 	}
 
 	protected function onEnable() : void{
-		if($this->getServer()->getResourcePackManager()->getPackById(self::RESOURCE_PACK_ID) === null){
-			$this->getLogger()->warning("Resource pack 'Inventory UI Resource Pack' could not be found.");
-			$this->getLogger()->warning("This plugin cannot be loaded. Please download the resource pack from: https://github.com/tedo0627/InventoryUIResourcePack");
-			throw new RuntimeException("Resource pack 'Inventory UI Resource Pack' has not been loaded");
-		}
-
 		if(!InvMenuHandler::isRegistered()){
 			InvMenuHandler::register($this);
 		}

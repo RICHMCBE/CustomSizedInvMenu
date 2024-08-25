@@ -3,6 +3,9 @@ main: muqsit\customsizedinvmenu\CustomSizedInvMenu
 api: 5.0.0
 version: 0.0.2
 
+virions:
+  - Muqsit/InvMenu/4.6.5
+
 commands:
   cinvmenu:
     usage: /cinvmenu <numSlots> [title]
