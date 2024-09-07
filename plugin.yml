@@ -15,4 +15,4 @@ commands:
 permissions:
   customsizedinvmenu.command:
     description: Allows using the /cinvmenu command
-    default: true
+    default: op
